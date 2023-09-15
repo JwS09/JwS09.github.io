@@ -1,0 +1,26 @@
+/* nav1.css */
+
+/* Styles for the <nav> section */
+nav {
+    background-color: #333; /* Background color for the navigation bar */
+    padding: 10px 0; /* Add padding above and below the navigation bar */
+}
+
+/* Styles for the list items within the navigation bar */
+nav ul {
+    list-style-type: none; /* Remove bullet points from the list */
+    padding: 0;
+}
+
+nav li {
+    display: inline; /* Display list items inline for a horizontal layout */
+    margin-right: 20px; /* Add right margin between list items */
+}
+
+/* Style the links within the list items */
+nav a {
+    color: #fff; /* Text color for the links */
+    text-decoration: none; /* Remove underline from links */
+    padding: 10px 20px; /* Add padding to the links */
+    border: 1px solid #444; /* Add a border to separate the links */
+}
