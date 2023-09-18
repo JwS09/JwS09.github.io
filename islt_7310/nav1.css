@@ -1,5 +1,16 @@
 /* nav1.css */
 
+nav li {
+    display: inline; /* Display list items inline for a horizontal layout */
+    margin-right: 20px; /* Add right margin between list items */
+}
+
+
+
+
+
+
+
 /* Styles for the <nav> section */
 nav {
     background-color: #333; /* Background color for the navigation bar */
@@ -12,10 +23,6 @@ nav ul {
     padding: 0;
 }
 
-nav li {
-    display: inline; /* Display list items inline for a horizontal layout */
-    margin-right: 20px; /* Add right margin between list items */
-}
 
 /* Style the links within the list items */
 nav a {
