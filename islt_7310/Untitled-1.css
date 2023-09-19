@@ -1,0 +1,11 @@
+/* Style the links within the list items */
+nav a {
+    /* Text color for the links */
+    color: #fff; 
+    /* Remove underline from links */
+    text-decoration: none; 
+    /* Add padding to the links */
+    padding: 20px; 
+    /* Add a border to separate the links */
+    border: 1px solid #444; 
+}
