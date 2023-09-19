@@ -4,29 +4,7 @@
 /* Reset default list styles and remove bullet points */
 ul.nav, li {
     list-style: none;
-    padding: 0;
-    margin: 0;
+    padding: 20px;
+    margin: 10px;
     display: inline;
   }
-  
-  /* Style the navigation bar */
-  ul.nav {
-    background-color: #333; /* Background color */
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px; /* Padding around the navigation bar */
-  }
-  
-  /* Style the navigation items */
-  ul.nav li {
-    margin-right: 20px; /* Spacing between navigation items */
-  }
-  
-  /* Style the links */
-  ul.nav li a {
-    text-decoration: none; /* Remove underlines from links */
-    color: #fff; /* Text color for links */
-    font-weight: bold; /* Bold text for links */
-  }
-  
