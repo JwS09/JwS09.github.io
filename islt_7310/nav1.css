@@ -1,7 +1,33 @@
 /* nav1.css */
 /* Styles for the <nav> section */
 
-ul li{
-    display: inline;
+/* Style the navigation bar container (the box) */
+.navbar-box {
+    background-color: #333;
+    padding: 10px;
+}
 
+/* Style the navigation bar itself */
+.navbar {
+    text-align: center; /* Center align the navigation items */
+}
+
+/* Style each navigation item */
+.navbar li {
+    display: inline; /* Display items inline horizontally */
+    margin-right: 20px; /* Add spacing between items */
+}
+
+/* Style the links within the navigation items */
+.navbar li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+/* Change the link color on hover */
+.navbar li a:hover {
+    background-color: #555;
 }
