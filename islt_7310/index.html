@@ -19,33 +19,35 @@ Updated/Tested:  September 18, 2023; Passed on Brave and Chrome browsers.
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
-               <meta charset="utf-8">
-               <link rel="stylesheet" href="styleSheet1.css">
-               <link rel="nav" type="text/css" href="nav1.css">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styleSheet1.css">
+	<link rel="stylesheet" href="nav1.css">
 
-               <title>Home Page</title>
+    <title>Home Page</title>
 </head>
 
-<nav>
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="projects.html">Projects</a></li>
-            <ul>
-                <li><a href="#">Link 1</a></li> <!-- Placeholder for Link 1 -->
-                <li><a href="#">Link 2</a></li> <!-- Placeholder for Link 2 -->
-                <li><a href="#">Link 3</a></li> <!-- Placeholder for Link 3 -->
-            </ul>
-        <li><a href="reflection.html">Reflections</a></li>
-        <li><a href="#contact.html">Contact (Coming Soon)</a></li>
-    </ul>
-</nav>
-
 <body>
+    <nav class="navbar">
+        <ul class="nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li class="dropdown">
+                <a href="projects.html">Projects</a>
+                <ul class="submenu">
+                    <li><a href="#">Link 1</a></li>
+                    <li><a href="#">Link 2</a></li>
+                    <li><a href="#">Link 3</a></li>
+                </ul>
+            </li>
+            <li><a href="reflection.html">Reflections</a></li>
+            <li><a href="#contact.html">Contact (Coming Soon)</a></li>
+        </ul>
+    </nav>
+
     <header>
         <h1>Home Page</h1>
-        <h3>Welcome to My Website</h2>
-        <p><h3>Welcome to my professional portfolio website! Explore my journey as a marketing/data science major, showcasing a diverse skill set and practical expertise.</h3> </p>
+        <h3>Welcome to My Website</h3>
+        <p><h3>Welcome to my professional portfolio website! Explore my journey as a marketing/data science major, showcasing a diverse skill set and practical expertise.</h3></p>
     </header>
     <br>
     <p>Welcome to my professional portfolio website! This platform is designed to showcase my journey as a marketing/data science major, highlighting my diverse skill set and practical expertise. </p>
