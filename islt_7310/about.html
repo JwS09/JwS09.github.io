@@ -22,22 +22,27 @@ Updated/Tested:  September 18, 2023; Passed on Brave and Chrome browsers.
 <head>
     <title>About Page</title>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="styleSheet1.css">
+	<link rel="stylesheet" href="nav1.css">
+
 </head>
 
-<nav>
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="projects.html">Projects</a></li>
-            <ul>
-                <li><a href="#">Link 1</a></li> <!-- Placeholder for Link 1 -->
-                <li><a href="#">Link 2</a></li> <!-- Placeholder for Link 2 -->
-                <li><a href="#">Link 3</a></li> <!-- Placeholder for Link 3 -->
-            </ul>
-        <li><a href="reflection.html">Reflections</a></li>
-        <li><a href="#contact.html">Contact (Coming Soon)</a></li>
-    </ul>
-</nav>
+<nav class="navbar">
+        <ul class="nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li class="dropdown">
+                <a href="projects.html">Projects</a>
+                <ul class="submenu">
+                    <li><a href="#">Link 1</a></li>
+                    <li><a href="#">Link 2</a></li>
+                    <li><a href="#">Link 3</a></li>
+                </ul>
+            </li>
+            <li><a href="reflection.html">Reflections</a></li>
+            <li><a href="#contact.html">Contact (Coming Soon)</a></li>
+        </ul>
+    </nav>
 
 <body>
     <h1>Jasper Schomaker</h1> 
