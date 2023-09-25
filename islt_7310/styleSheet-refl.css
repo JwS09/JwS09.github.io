@@ -1,0 +1,10 @@
+
+/* Indent the first line of paragraphs with the 'indented' class */
+.indented::first-line {
+    text-indent: 20px; /* Adjust the indentation value as needed */
+}
+.first-paragraph::first-letter {
+    font-size: 150%; /* Adjust the size as needed */
+    color: rgb(199, 125, 45);     /* Adjust the color as needed */
+    /* Add any other styles you want for the first letter */
+  }
