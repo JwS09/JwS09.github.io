@@ -10,7 +10,7 @@ School/Term:  University of Missouri, Columbia, Fall 2023
 
 Developed: August 31, 2023
 
-Updated/Tested:  September 18, 2023; Passed on Brave and Chrome browsers.
+Updated/Tested:  September 24, 2023; Passed on Brave and Chrome browsers.
 
 ******************************************************************************
 
@@ -24,10 +24,14 @@ Updated/Tested:  September 18, 2023; Passed on Brave and Chrome browsers.
     <meta charset="utf-8">
     <link rel="stylesheet" href="styleSheet1.css">
 	<link rel="stylesheet" href="nav1.css">
+    
 
 </head>
 
-<nav class="navbar">
+<div class="wrapper">
+    
+    
+    <nav class="navbar">
         <ul class="nav">
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
@@ -43,9 +47,13 @@ Updated/Tested:  September 18, 2023; Passed on Brave and Chrome browsers.
             <li><a href="#contact.html">Contact (Coming Soon)</a></li>
         </ul>
     </nav>
+    
+    <header class="main-head"><h1>Jasper Schomaker</h1></header>
+    <img class= "main-img" src="jasperAndUrsa.jpg" alt="Jasper and Ursa" style="width: 300px; height: 200px;">
+    
 
 <body>
-    <h1>Jasper Schomaker</h1> 
+    <article class="content">
     <h3>About <strong>Me</strong></h3>
     <p><strong>Hello!</strong>! My name is Jasper Schomaker, I’m currently a business major specializing in marketing, analytics, and information systems at the University of Missouri, Columbia. In high school, I was an active member of DECA, Speech and Debate, and gained a variety of involvement experiences in Student Government. <br> I am certified in R/Posit, Python, VBA, Microsoft Suite, SQL, and pursuing a graduate certificate in <em>Marketing Analytics</em>.</p>
     <br>
@@ -53,16 +61,19 @@ Updated/Tested:  September 18, 2023; Passed on Brave and Chrome browsers.
        
         <p>Click the link below to open my Resume PDF:</p>
         <a href="resume.pdf" >Resume</a>
-    <blockquote>
-        “Life can only be understood backwards, but must be lived forwards.”
-        -author unknown
-        </blockquote>
+</article>
+</body>
 
+    <aside class="side">
+        <blockquote>
+            “Life can only be understood backwards, but must be lived forwards.”
+            -author unknown
+        </blockquote>
+    </aside>
         <br>
 
-        <footer>
-            <p>&copy; 2023 Jasper Schomaker's Portfolio. All rights reserved.</p>
-        </footer>
-        
-    </body>
+    <footer class="main-footer">
+        <p>&copy; 2023 Jasper Schomaker's Portfolio. All rights reserved.</p>
+    </footer> 
+</div>
     </html>

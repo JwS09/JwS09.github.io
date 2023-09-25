@@ -9,9 +9,6 @@ h1 {
 .main-head {
     grid-area: header;
   }
-.main-img {
-    grid-area: img;
-  }
   .content {
     grid-area: content;
   }
@@ -34,7 +31,6 @@ h1 {
     grid-template-areas:
       "header"
       "nav"
-      "img"
       "content"
       "sidebar"
       "ad"
@@ -47,25 +43,10 @@ h1 {
       grid-template-areas:
         "nav    nav     nav"
         "header    content sidebar"
-        "img    content ad"
+        "header    content ad"
         "footer footer  footer";
     }
     nav ul {
       flex-direction: column;
-    }
-  }
-
-  @media (min-width: 500px) {
-    .wrapper {
-      grid-template-columns: 1fr 3fr;
-      grid-template-areas:
-        "nav  nav"
-        "img     header"
-        "sidebar content"
-        "ad      footer";
-    }
-    nav ul {
-      display: flex;
-      justify-content: space-between;
     }
   }
