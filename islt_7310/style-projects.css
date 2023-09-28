@@ -1,0 +1,93 @@
+/* Reset some default browser styles */
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Style the header */
+header {
+    padding: 10px;
+    text-align: center;
+}
+
+h1 {
+    color: #7f85a0;
+}
+
+/* Style the main content */
+/* Center content vertically and horizontally */
+.center-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* Style the blockquote */
+blockquote {
+    font-size: 24px;
+    font-style: italic;
+    margin-bottom: 10px; /* Reduce margin */
+}
+
+/* Style the footer */
+footer {
+    background-color: #7f85a0;
+    color: #fff;
+    padding: 10px;
+    width: 100%;
+}
+
+/* Style paragraphs */
+p {
+    margin: 10px 0; /* Add margin to paragraphs */
+}
+
+/* Style the container rows */
+.container-row {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Style the clickable containers */
+.container {
+    display: inline-block;
+    width: 150px;
+    height: 100px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    text-align: center;
+    line-height: 100px;
+    text-decoration: none;
+    color: #333;
+    transition: background-color 0.3s;
+}
+
+/* Change the container color on hover */
+.container:hover {
+    background-color: #7f85a0;
+    color: #fff;
+}
+
+/* Mobile Layout */
+@media screen and (max-width: 768px) {
+    /* Adjustments for smaller screens */
+    h1 {
+        font-size: 24px;
+    }
+
+    blockquote {
+        font-size: 18px;
+    }
+
+    .container-row {
+        flex-direction: column; /* Stack containers vertically */
+    }
+
+    .container {
+        width: 100%; /* Full width for mobile */
+        margin-bottom: 10px;
+    }
+}

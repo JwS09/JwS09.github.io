@@ -1,0 +1,66 @@
+/* Style the main content */
+/* Center content vertically and horizontally */
+.center-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+    text-align: center;
+}
+
+/* Style the blockquote */
+blockquote {
+    font-size: 24px;
+    font-style: italic;
+    margin-bottom: 10px; /* Reduce margin */
+}
+
+/* Style the footer */
+footer {
+    background-color: #7f85a0;
+    color: #fff;
+    padding: 10px;
+    width: 100%;
+}
+
+/* Style the main content */
+.center-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* Style the blockquote */
+blockquote {
+    font-size: 24px;
+    font-style: italic;
+    margin-bottom: 10px; /* Reduce margin */
+}
+
+/* Style the footer */
+footer {
+    background-color: #7f85a0;
+    color: #fff;
+    padding: 10px;
+    width: 100%;
+}
+
+/* Media query for mobile devices (up to 768px) */
+@media screen and (max-width: 768px) {
+    /* Adjust styles for smaller screens */
+    .center-container {
+        padding: 10px; /* Add some spacing around content */
+    }
+
+    blockquote {
+        font-size: 20px; /* Decrease font size for smaller screens */
+    }
+
+    footer {
+        padding: 5px; /* Reduce footer padding */
+    }
+}
+
