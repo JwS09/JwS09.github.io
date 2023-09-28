@@ -2,7 +2,7 @@
 
 /* Styling the body element */
 /* Styling headings */
-h1 {
+h3 {
     color: #7f85a0;
 }
 
@@ -41,6 +41,30 @@ h1 {
       "footer";
   }
 
+  /* Style the social media link boxes */
+.social-links {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 10px;
+  display: flex;
+}
+
+.social-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-left: 10px;
+  text-decoration: none;
+  color: #333; /* Text color for labels */
+}
+
+.social-link img {
+  width: 40px; /* Adjust the icon size as needed */
+  height: 40px;
+}
+
   @media (min-width: 700px) {
     .wrapper {
       grid-template-columns: 1fr 4fr 1fr;
@@ -78,4 +102,14 @@ footer {
     width: 100%;
 }
 
+@media screen and (max-width: 768px) {
+  .social-links {
+      position: static; /* Remove absolute positioning for smaller screens */
+      margin-top: 10px; /* Add some spacing */
+      justify-content: flex-end; /* Align links to the bottom */
+  }
 
+  .social-link {
+      margin-left: 5px; /* Reduce margin between links */
+  }
+}

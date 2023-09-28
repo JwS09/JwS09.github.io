@@ -2,7 +2,7 @@
 
 /* Styling the body element */
 /* Styling headings */
-h1 {
+h3 {
     color: #7f85a0;
 }
 
@@ -28,6 +28,10 @@ h1 {
     grid-area: footer;
   }
 
+  .icon {
+    grid-area: icon;
+  }
+
   .wrapper {
     display: grid;
     gap: 20px;
@@ -38,6 +42,7 @@ h1 {
       "content"
       "sidebar"
       "ad"
+      "icon"
       "footer";
   }
 
@@ -46,8 +51,8 @@ h1 {
       grid-template-columns: 1fr 4fr 1fr;
       grid-template-areas:
         "nav    nav     nav"
-        "header    content ."
-        "img    content ad"
+        "header    content sidebar"
+        "img    content sidebar"
         "footer footer  footer";
     }
     nav ul {
@@ -70,12 +75,45 @@ h1 {
     }
 }
 
-/* Style the footer */
-footer {
-    background-color: #7f85a0;
-    color: #fff;
-    padding: 10px;
-    width: 100%;
+.main-footer {
+  display: flex;
+  justify-content: space-between; /* Aligns content to left and right */
+  background-color: #7f85a0;
+  color: #fff;
+  padding: 10px;
+  width: 100%;
 }
+
+.contact-info {
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  display: inline-block;
+  margin: 0 20px;
+  position: relative;
+}
+
+.icon img {
+  width: 15px;
+  height: 15px;
+  cursor: pointer;
+}
+
+.icon:hover .contact-info span {
+  display: inline-block;
+  position: absolute;
+  background-color: #fff;
+  color: #333;
+  padding: 5px 10px;
+  border-radius: 5px;
+  top: 25px;
+  left: 0;
+  z-index: 1; /* To ensure it appears above other content */
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+
 
 
