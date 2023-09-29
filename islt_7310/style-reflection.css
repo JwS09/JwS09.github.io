@@ -1,66 +1,126 @@
-/* Style the main content */
-/* Center content vertically and horizontally */
-.center-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-   
-    text-align: center;
-}
-
-/* Style the blockquote */
-blockquote {
-    font-size: 24px;
-    font-style: italic;
-    margin-bottom: 10px; /* Reduce margin */
-}
-
-/* Style the footer */
-footer {
-    background-color: #7f85a0;
-    color: #fff;
+/* Reset some default browser styles */
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Style the header */
+  header {
     padding: 10px;
-    width: 100%;
-}
-
-/* Style the main content */
-.center-container {
+    text-align: center;
+  }
+  
+  h1 {
+    color: #7f85a0;
+  }
+  
+  /* Style the main content */
+  .center-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-}
-
-/* Style the blockquote */
-blockquote {
+  }
+  
+  /* Style the blockquote */
+  blockquote {
     font-size: 24px;
     font-style: italic;
     margin-bottom: 10px; /* Reduce margin */
-}
-
-/* Style the footer */
-footer {
+  }
+  
+  /* Style the footer */
+  footer {
     background-color: #7f85a0;
     color: #fff;
     padding: 10px;
     width: 100%;
-}
-
-/* Media query for mobile devices (up to 768px) */
-@media screen and (max-width: 768px) {
+  }
+  
+  /* Style paragraphs */
+  p {
+    margin: 10px 0; /* Add margin to paragraphs */
+  }
+  
+  /* Media query for mobile devices (up to 768px) */
+  @media screen and (max-width: 768px) {
     /* Adjust styles for smaller screens */
     .center-container {
-        padding: 10px; /* Add some spacing around content */
+      padding: 10px;
     }
-
+  
     blockquote {
-        font-size: 20px; /* Decrease font size for smaller screens */
+      font-size: 20px;
     }
-
+  
     footer {
-        padding: 5px; /* Reduce footer padding */
+      padding: 5px;
     }
-}
+  }
+  
+  /* Style social media link boxes */
+  .social-links {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px;
+    display: flex;
+  }
+  
+  .social-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-left: 10px;
+    text-decoration: none;
+    color: #333;
+  }
+  
+  .social-link img {
+    width: 40px;
+    height: 40px;
+  }
+  
+  /* Icon hover effect */
+  .icon2 img {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    transition: transform 0.2s;
+  }
+  
+  .icon2:hover img {
+    transform: scale(1.3);
+  }
 
+  .contact-info {
+    
+    align-items: center;
+  }
+  
+  .icon {
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+  }
+  
+  .icon img {
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+  }
+  
+  
+  
+  .icon img {
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+    transition: transform 0.2s; /* Add a transition for smooth hover effect */
+  }
+  
+  .icon:hover img {
+    transform: scale(1.3); /* Enlarge the icon slightly on hover */
+  }

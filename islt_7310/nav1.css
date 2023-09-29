@@ -22,7 +22,7 @@ ul.nav a, .dropdown a {
 
 /* Hover effect for the navbar links */
 ul.nav a:hover, .dropdown:hover a {
-    background-color: #555;
+    background-color: #535f94;
     color: white;
 }
 
@@ -35,9 +35,9 @@ li.dropdown {
 .dropdown .submenu {
     display: none;
     position: absolute;
-    background-color: #333;
+    
     min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    
     z-index: 1;
 }
 
@@ -54,7 +54,7 @@ li.dropdown {
 
 /* Hover effect for submenu items */
 .dropdown .submenu li a:hover {
-    background-color: #555;
+    background-color: #7f85a0;
 }
 
 /* Show the submenu on hover */
