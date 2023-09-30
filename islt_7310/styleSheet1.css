@@ -1,75 +1,21 @@
 /* styleSheet1.css */
+/* Print Query and Font Development */
 
-/* Styling the body element */
-/* Styling headings */
+@font-face {
+  font-family: 'CustomFont';
+  src: url('Visuals/Fonts/Raleway/Raleway-Italic-VariableFont_wght.ttf') format('woff2'),
+       url('Visuals/Fonts/Raleway/Raleway-VariableFont_wght.ttf') format('woff');
+  /* You can add additional font formats and sources here if needed */
+  font-weight: normal; /* Specify the font weight */
+  font-style: normal; /* Specify the font style (e.g., italic) */
+}
+
+/* Now you can apply the custom font to specific elements */
+body {
+  font-family: 'CustomFont', sans-serif;
+}
+
 h1 {
-    color: #7f85a0;
+  font-family: 'CustomFont', serif;
+  font-style: italic; /* Specify the font style for h1 as italic */
 }
-
-.main-head {
-    grid-area: header;
-  }
-.main-img {
-    grid-area: img;
-  }
-  .content {
-    grid-area: content;
-  }
-  .navbar {
-    grid-area: nav;
-  }
-  .side {
-    grid-area: sidebar;
-  }
-  .ad {
-    grid-area: ad;
-  }
-  .main-footer {
-    grid-area: footer;
-  }
-
-  .wrapper {
-    display: grid;
-    gap: 20px;
-    grid-template-areas:
-      "header"
-      "nav"
-      "img"
-      "content"
-      "sidebar"
-      "ad"
-      "footer";
-  }
-
-  @media (min-width: 700px) {
-    .wrapper {
-      grid-template-columns: 1fr 4fr 1fr;
-      grid-template-areas:
-        "nav    nav     nav"
-        "header    content sidebar"
-        "img    content ad"
-        "footer footer  footer";
-    }
-    nav ul {
-      flex-direction: column;
-    }
-  }
-
-/* Mobile layout styles */
-@media (max-width: 699px) {
-    .wrapper {
-        grid-template-columns: 1fr;
-        grid-template-areas:
-            "nav"
-            "header"
-            "img"
-            "content"
-            "sidebar"
-            "ad"
-            "footer";
-    }
-}
-
-
-
-

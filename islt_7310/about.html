@@ -10,7 +10,7 @@ School/Term:  University of Missouri, Columbia, Fall 2023
 
 Developed: August 31, 2023
 
-Updated/Tested:  September 24, 2023; Passed on Brave and Chrome browsers.
+Updated/Tested:  September 28, 2023; Passed on Brave and Chrome browsers.
 
 ******************************************************************************
 
@@ -20,101 +20,88 @@ Updated/Tested:  September 24, 2023; Passed on Brave and Chrome browsers.
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
-    <title>About Page</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Page</title>
     <link rel="stylesheet" href="style-about.css">
-	<link rel="stylesheet" href="nav1.css">
-    
-    <link rel="icon" href="favicon1.png" type="image/png">
-
+    <link rel="stylesheet" href="styleSheet1.css">
+    <link rel="stylesheet" href="nav1.css">
+    <link rel="icon" href="Visuals/Images/favicon1.png" type="image/png">
 </head>
 <body>
-
     <div class="wrapper">
-    
-    <nav class="navbar">
-        <ul class="nav">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li class="dropdown">
-                <a href="projects.html">Projects</a>
-                <ul class="submenu">
-                    <li><a href="#">Link 1</a></li>
-                    <li><a href="#">Link 2</a></li>
-                    <li><a href="#">Link 3</a></li>
-                </ul>
-            </li>
-            <li><a href="reflection.html">Reflections</a></li>
-            <li><a href="#contact.html">Contact (Coming Soon)</a></li>
-        </ul>
-    </nav>
+        <nav class="navbar">
+            <ul class="nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li class="dropdown">
+                    <a href="projects.html">Projects</a>
+                    <ul class="submenu">
+                        <li><a href="#">Link 1</a></li>
+                        <li><a href="#">Link 2</a></li>
+                        <li><a href="#">Link 3</a></li>
+                    </ul>
+                </li>
+                <li><a href="reflection.html">Reflections</a></li>
+                <li><a href="#contact.html">Contact (Coming Soon)</a></li>
+            </ul>
+        </nav>
 
-    <div class="social-links">
-        <div class="icon2" id="face-icon">
-        <a href="#" class="social-link">
-            <img src="facebookIcon.png" alt="Facebook"> 
-        </a></div>
+        <div class="social-links">
+            <div class="icon2" id="face-icon">
+                <a href="#" class="social-link">
+                    <img src="Visuals/Images/facebookIcon.png" alt="Facebook"> 
+                </a>
+            </div>
+            <div class="icon2" id="X-icon">
+                <a href="#" class="social-link">
+                    <img src="Visuals/Images/twitterXIcon.png" alt="Twitter">
+                </a>
+            </div>
+            <div class="icon2" id="Insta-icon">
+                <a href="#" class="social-link">
+                    <img src="Visuals/Images/instagramIcon.png" alt="Instagram">
+                </a>
+            </div>
+            <div class="icon2" id="LinkedIn-icon">
+                <a href="#" class="social-link">
+                    <img src="Visuals/Images/linkedinIcon.png" alt="LinkedIn">
+                </a>
+            </div>
+        </div>
 
-        <div class="icon2" id="X-icon">
-        <a href="#" class="social-link">
-            <img src="twitterXIcon.png" alt="Twitter">
-        </a></div>
+        <header class="main-head">
+            <h1>Jasper Schomaker</h1>
+        </header>
         
-        <div class="icon2" id="Insta-icon">
-        <a href="#" class="social-link">
-            <img src="instagramIcon.png" alt="Instagram">
-        </a></div>
+        <img class="main-img" src="Visuals/Images/jasperAndUrsa.jpg" alt="Jasper and Ursa" style="width: 300px; height: 200px;">
 
-        <div class="icon2" id="LinkedIn-icon">
-        <a href="#" class="social-link">
-            <img src="linkedinIcon.png" alt="LinkedIn">
-        </a></div>
+        <article class="content">
+            <h3>About <strong>Me</strong></h3>
+            <p><strong>Hello!</strong> My name is Jasper Schomaker. I am currently a business major specializing in marketing, analytics, and information systems at the University of Missouri, Columbia. In high school, I was an active member of DECA, Speech and Debate, and gained a variety of involvement experiences in Student Government. I am certified in R/Posit, Python, VBA, Microsoft Suite, SQL, and pursuing a graduate certificate in <em>Marketing Analytics</em>.</p>
+            <p>I expect to graduate in <em>May 2024</em> and am looking forward to a full foray into the professional environment.</p> 
+            <p>Click the link below to open my Resume PDF:</p>
+            <a href="Visuals/PDF/resume.pdf">Resume</a>
+        </article>
+
+        <aside class="side">
+            <h3>Visual Resume</h3>
+            <iframe width="480" height="270" src="https://www.powtoon.com/embed/e8TjW8bArrC/" frameborder="0" allowfullscreen></iframe>
+        </aside>
     </div>
-    
-    <header class="main-head"><h1>Jasper Schomaker</h1></header>
-    <img class= "main-img" src="jasperAndUrsa.jpg" alt="Jasper and Ursa" style="width: 300px; height: 200px;">
-    
-
-
-    <article class="content">
-    <h3>About <strong>Me</strong></h3>
-    <p><strong>Hello!</strong>! My name is Jasper Schomaker, I’m currently a business major specializing in marketing, analytics, and information systems at the University of Missouri, Columbia. In high school, I was an active member of DECA, Speech and Debate, and gained a variety of involvement experiences in Student Government. <br> I am certified in R/Posit, Python, VBA, Microsoft Suite, SQL, and pursuing a graduate certificate in <em>Marketing Analytics</em>.</p>
-    <br>
-    <p>I expect a graduation date of <em>May</em> 2024, and am looking forward to a full foray into the professional environment.</p> 
-       <br>
-        <p>Click the link below to open my Resume PDF:</p>
-        <a href="resume.pdf" >Resume</a>
-
-        
-    </article>
-
-
-    <aside class="side">
-        <h3>Visual Resume</h3>
-        <iframe width="480" height="270" src="https://www.powtoon.com/embed/e8TjW8bArrC/" frameborder="0" allowfullscreen></iframe>
-    </aside>
-    
-    </body> 
-
-    <br>   
 
     <footer class="main-footer">
-
         <p>&copy; 2023 Jasper Schomaker's Portfolio. All rights reserved.</p>
         <div class="contact-info">
             <div class="icon" id="email-icon">
-                <img src="emailIcon.png" alt="Email Icon">
+                <img src="Visuals/Images/emailIcon.png" alt="Email Icon">
                 <span id="email-info">jasper.scho.09@gmail.com</span>
             </div>
             <div class="icon" id="phone-icon">
-                <img src="phoneIcon.png" alt="Phone Icon">
+                <img src="Visuals/Images/phoneIcon.png" alt="Phone Icon">
                 <span id="phone-info">573-999-5680</span>
             </div>
-            
         </div>
-        
     </footer>
-
-</div>
+</body>
 </html>
