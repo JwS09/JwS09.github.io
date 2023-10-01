@@ -19,3 +19,25 @@ h1 {
   font-family: 'CustomFont', serif;
   font-style: italic; /* Specify the font style for h1 as italic */
 }
+
+@media print {
+  /* Set the font color to black for all elements */
+  body, h1, p, ul, ol, blockquote, .main-footer {
+    color: black !important;
+  }
+
+  /* Set a serif font for all elements */
+  body, h1, p, ul, ol, blockquote, .main-footer {
+    font-family: serif !important;
+  }
+
+  /* Apply the custom font to the h1 element */
+  h1 {
+    font-family: 'CustomFont', serif !important;
+  }
+
+  /* Adjust the printable margins to be 1" on all sides */
+  @page {
+    margin: 1in;
+  }
+}
