@@ -35,7 +35,9 @@ body, h1, h2, p {
     background-color: #7f85a0;
     color: #fff;
     padding: 10px;
+    position: absolute;
     width: 100%;
+    bottom: 0;
   }
   
   /* Style paragraphs */

@@ -53,8 +53,15 @@ body, h1, h2, p {
   footer {
     background-color: #7f85a0;
     color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center vertically */
+    align-items: center; /* Center horizontally */
+    text-align: center; /* Center text inside the div */
     padding: 10px;
     width: 100%;
+    position: absolute;
+    bottom: 0;
   }
   
   

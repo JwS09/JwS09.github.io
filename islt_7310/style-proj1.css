@@ -15,19 +15,22 @@ body, h1, h2, p {
   }
 
   /* Center the container and image */
-.centered-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh; /* This centers the container vertically */
-}
-
-/* Style the banner */
-.banner {
-  width: 100%; /* Make the image full-width */
-  height: 200px; /* Maintain aspect ratio */
-}
-
+  .centered-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* This centers the container vertically */
+  }
+  
+  /* Style the banner */
+  .banner {
+    width: 100%; /* Make the image full-width */
+    height: 200px; /* Maintain aspect ratio */
+  }
+  .centered-text {
+    text-align: center;
+}  
+  
   /* Style the blockquote */
   blockquote {
     font-size: 24px;
@@ -50,6 +53,8 @@ body, h1, h2, p {
     text-align: center; /* Center text inside the div */
     padding: 10px;
     width: 100%;
+    position: absolute;
+    bottom: 0;
   }
   
   

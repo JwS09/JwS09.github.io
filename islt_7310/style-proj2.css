@@ -29,30 +29,34 @@ body, h1, h2, p {
     color: #50342c;
   }
 
-  
-  
-  /* Style the main content */
-  .center-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  .centered-text {
     text-align: center;
-  }
+}  
   
   /* Style the blockquote */
   blockquote {
     font-size: 24px;
     font-style: italic;
     margin-bottom: 10px; /* Reduce margin */
+    flex-direction: column;
+    justify-content: center; /* Center vertically */
+    align-items: center; /* Center horizontally */
+    text-align: center; /* Center text inside the div */
   }
   
   /* Style the footer */
   footer {
     background-color: #7f85a0;
     color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center vertically */
+    align-items: center; /* Center horizontally */
+    text-align: center; /* Center text inside the div */
     padding: 10px;
     width: 100%;
+    position: absolute;
+    bottom: 0;
   }
   
   
