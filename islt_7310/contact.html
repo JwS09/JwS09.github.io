@@ -2,7 +2,7 @@
 
 *****************************************************************************
 
-Title:  Project Page 3
+Title:  Contact Me
 
 Author:  Jasper Schomaker
 
@@ -15,13 +15,13 @@ Updated/Tested:  October 8, 2023; Passed on Brave and Chrome browsers.
 ******************************************************************************
 -->
 
-<!DOCTYPE html>
 <html lang="en-US">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects Page</title>
-    <link rel="stylesheet" href="style-proj3.css">
+    <title>Contact</title>
+    <link rel="stylesheet" href="styleSheet1.css">
+    <link rel="stylesheet" href="style-contact.css">
     <link rel="stylesheet" href="nav1.css">
     <link rel="icon" href="Visuals/Images/favicon1.png" type="image/png">
 </head>
@@ -39,7 +39,7 @@ Updated/Tested:  October 8, 2023; Passed on Brave and Chrome browsers.
                 </ul>
             </li>
             <li><a href="reflection.html">Reflections</a></li>
-            <li><a href="contact.html">Contact (Coming Soon)</a></li>
+            <li><a href="#contact.html">Contact</a></li>
         </ul>
     </nav>
 
@@ -65,19 +65,38 @@ Updated/Tested:  October 8, 2023; Passed on Brave and Chrome browsers.
             </a>
         </div>
     </div>
+<br>
+<br>
 <body>
-    <header>
-        <h1>Total Lending Concepts</h1>
-        
-        <h5>Welcome to the project section of my professional portfolio website! Explore my journey as a marketing/data science major, showcasing practical deliverables and experiences.</h5>
-    </header>
-
-    <div>
-        <img class="banner" src="Visuals/Images/TLCrecruitmentBanner.png" alt="TLC Recruiter Banner" style="width: max;">
-        
+    <div class="center-container">
+        <h2>Contact Me!</h2>
+        <br>
+        <form action="mailto:jasper.scho.09@gmail.com?subject=Portfolio/Professional%20Website%20Contact" method="post" enctype="text/plain">
+            <table>
+                <tr>
+                    <th><label for="first-name">First Name:</label></th>
+                    <td><input type="text" id="first-name" name="first-name" placeholder="John" required></td>
+                </tr>
+                <tr>
+                    <th><label for="last-name">Last Name:</label></th>
+                    <td><input type="text" id="last-name" name="last-name" placeholder="Doe" required></td>
+                </tr>
+                <tr>
+                    <th><label for="email">Email:</label></th>
+                    <td><input type="email" id="email" name="email" placeholder="johndoe@example.com" required></td>
+                </tr>
+                <tr>
+                    <th><label for="message">Message:</label></th>
+                    <td><textarea id="message" name="message" rows="4" placeholder="Your message here..." required></textarea></td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="text-align: center;"><input type="submit" value="Send"></td>
+                </tr>
+            </table>
+        </form>
     </div>
 
-    <div class="center-container">
+<div class="center-container">
         <blockquote>
             “Life can only be understood backwards, but must be lived forwards.”
             <br>
@@ -98,3 +117,4 @@ Updated/Tested:  October 8, 2023; Passed on Brave and Chrome browsers.
         </footer>
     </div>
 </body>
+</html>
