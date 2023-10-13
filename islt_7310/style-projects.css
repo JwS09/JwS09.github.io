@@ -35,9 +35,8 @@ body, h1, h2, p {
     background-color: #7f85a0;
     color: #fff;
     padding: 10px;
-    position: absolute;
     width: 100%;
-    bottom: 0;
+    
   }
   
   /* Style paragraphs */
@@ -157,6 +156,15 @@ body, h1, h2, p {
       width: 100%; /* Full width for mobile */
       margin-bottom: 10px;
     }
+    .social-links {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-top: 35px; /* Add margin to separate the links from the content */
+      filter: brightness(0%);
+    }
   }
+  
   
   

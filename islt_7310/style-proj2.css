@@ -80,7 +80,16 @@ body, h1, h2, p {
       width: 100%; /* Full width for mobile */
       margin-bottom: 10px;
     }
+    .social-links {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-top: 35px; /* Add margin to separate the links from the content */
+      filter: brightness(0%);
+    }
   }
+  
   
   /* Style the social media link boxes */
   .social-links {

@@ -8,10 +8,23 @@
     height: 100vh; /* This centers the container vertically */
 }
 
-/* Style the banner */
-.banner {
-    width: 100%; /* Make the image full-width */
-    height: auto; /* Maintain aspect ratio */
+/* Style the banner container */
+.banner-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Style the small banners */
+.small-banner {
+  width: 20%; /* Adjust the width as needed */
+  height: auto;
+}
+
+/* Style the large banner */
+.large-banner {
+  width: 60%; /* Adjust the width as needed */
+  height: auto;
 }
 
 /* Reset some default browser styles */
@@ -42,6 +55,10 @@ body, h1, h2, p {
     text-align: center;
   }
   
+  .centered-text {
+    text-align: center;
+}  
+
   /* Style the blockquote */
   blockquote {
     font-size: 24px;
@@ -60,8 +77,7 @@ body, h1, h2, p {
     text-align: center; /* Center text inside the div */
     padding: 10px;
     width: 100%;
-    position: absolute;
-    bottom: 0;
+    
   }
   
   
@@ -85,7 +101,16 @@ body, h1, h2, p {
       width: 100%; /* Full width for mobile */
       margin-bottom: 10px;
     }
+    .social-links {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-top: 35px; /* Add margin to separate the links from the content */
+      filter: brightness(0%);
+    }
   }
+  
   
   /* Style the social media link boxes */
   .social-links {
